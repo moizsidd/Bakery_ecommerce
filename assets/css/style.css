@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Uchen', serif;
+}
+.all-content{
+    background: #2e1700;
+}
+/* navbar stats */
+#navbar{
+    background-color: #573818 !important;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#navbar i{
+    color: #fff;
+    padding: 10px;
+}
+#navbar #logo{
+    font-size: 30px;
+}
+#navbar #logo span{
+    color: #9d7f60;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: #fff !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgba(161,109,14,1);
+    color: #fffb;
+    border-radius: 5px;
+}
+.icons i{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons i:hover{
+    transform: translateY(-6px);
+    background-color: rgba(161,109,14,1);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/* navbar ends */
+
+/* home section starts */
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg1.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.home .content{
+    flex: 1 1 100px;
+    margin-left: 20%;
+    margin-right: 7%;
+}
+.content h3{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: '';
+    color: rgba(161,109,14,1);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Birthday Cake";}
+    20%{content: "Chocolate Cake";}
+    40%{content: "Party Cake";}
+    60%{content: "Slice Cake";}
+    100%{content: "Cup Cake";}
+}
+.content p{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #573818;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.content .btn:hover{
+    transform: translateY(-8px);
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+/* home section ends */
+
+/* top card starts */
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-8px);
+}
+/* top card ends */
+
+/* banner starts */
+.banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('bg2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 50px;
+}
+.banner .content{
+    flex: 1 1 400px;
+    /* margin-left: 60px; */
+    margin-top: 60px;
+    text-align: center;
+}
+.banner .content h3{
+    margin-top: -140px;
+    color: rgba(161,109,14,1);
+    font-weight: bold;
+}
+.banner .content h2{
+    color: rgba(161,109,14,1);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.banner .content p{
+    color: rgba(161,109,14,1);
+}
+.btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: rgba(161,109,14,1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btnorder button:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:800px){
+    .banner .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:855px){
+    .banner{
+        height: 100vh;
+    }
+}
+/* banner ends */
+
+/* product section starts  */
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#product-cards .card{
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 6%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i{
+    /* background-color: #2e1700; */
+    height: 23px;
+    width: 30   px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -7%;
+    margin-bottom: 20%;
+    cursor: pointer;
+}
+.overlay .btn{
+    background-color: rgba(161,109,14,1) !important;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    margin-bottom: 3px;
+}
+#product-cards h3{
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+.star .checked{
+    color: yellow;
+}
+#product-cards p{
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6 span button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    float: right;
+    border: 2px solid #2e1700;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6 span button:hover{
+    background-color: #2e1700;
+    color: #fff;
+}
+/* product section ends */
+
+/* gallery section starts */
+#gallery{
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 30px;
+}
+#gallery .container{
+    padding-bottom: 60px;
+}
+#gallery h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#gallery .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallery .overlay{
+    opacity: 0;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+}
+#gallery .card:hover .overlay{
+    opacity: 5;
+    margin-top: 28%;
+    transition: 0.5s ease;
+}
+/* gallery section ends */
+
+/* about section starts */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#about .card{
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 18px;
+}
+#btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgba(161,109,14,1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#btn button:hover{
+    transform: translateY(-6px);
+}
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/* about section ends */
+
+/* contact section starts */
+#contact{
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('bg2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px;
+    background-color: transparent;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+    margin-bottom: 50px;
+}
+#contact input{
+    background-color: rgba(161,109,14,1);
+    color: #fff;
+}
+#contact input::placeholder{
+    color: #fff;
+}
+#contact textarea{
+    background-color: rgba(161,109,14,1);
+    color: #fff;
+}
+#contact textarea::placeholder{
+    color: #fff;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgba(161,109,14,1);
+
+}
+/* contact section ends */
+
+/* footer starts  */
+#footer{
+    width: 100%;
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    /* margin-top: 100px; */
+    background-attachment: fixed;
+}
+footer h1{
+    color: #fff;
+    padding-top: 30px;
+}
+#footer p{
+    color: #fff;
+}
+#footer .icons i{
+    background-color: #fff;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#footer .icons i:hover{
+    background-color: rgba(161,109,14,1);
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+    margin-top: 20px;
+}
+.credits{
+    color: #fff;
+}
+/* footer ends  */
